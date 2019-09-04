@@ -1,5 +1,3 @@
-#pragma comment(lib, "Strmiids.lib")
-
 #include <dshow.h>
 #include <conio.h>
 
@@ -14,3 +12,12 @@ enum PlaybackState
 	STATE_STOPPED,
 };
 
+void main(void)
+{
+	IGraphBuilder *pGraph = NULL;
+	IMediaControl *pControl = NULL;
+	IMediaEvent   *pEvent = NULL;
+	IMediaSeeking	*pSeek = NULL;
+	PlaybackState State;
+
+}
