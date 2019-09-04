@@ -67,7 +67,13 @@ void main(void)
 	hr = pGraph->QueryInterface(IID_IMediaSeeking, (void **)&pSeek);
 
 	// Build the graph. IMPORTANT: Change this string to a file on your system.
-	hr = pGraph->RenderFile(L"Example.avi", NULL);
+	hr = pGraph->RenderFile(L"\\Example.avi", NULL);
+
+	if (FAILED(hr))
+	{
+		printf("fck me");
+
+	}
 
 	if (SUCCEEDED(hr))
 	{
