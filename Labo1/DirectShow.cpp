@@ -1,5 +1,6 @@
 #include <dshow.h>
 #include <conio.h>
+#include <string>
 
 #define SECOND 10000000
 REFERENCE_TIME rtNow = 0 * SECOND;
@@ -11,11 +12,11 @@ class Videoplayer
 	IMediaControl *pControl = NULL;
 	IMediaEvent   *pEvent = NULL;
 	IMediaSeeking	*pSeek = NULL;
-	PlaybackState State;
 	HRESULT hr;
 public:
 	Videoplayer();
 	void Run();
+	void End();
 
 };
 
@@ -55,6 +56,14 @@ Videoplayer::Videoplayer()
 void Videoplayer::Run()
 {
 	hr = pControl->Run();
+}
+
+void Videoplayer::End()
+{
+	pControl->Release();
+	pEvent->Release();
+	pGraph->Release();
+	CoUninitialize();
 }
 
 
@@ -98,6 +107,18 @@ void main(void)
 	IMediaEvent   *pEvent = NULL;
 	IMediaSeeking	*pSeek = NULL;
 	PlaybackState State;
+
+	 
+	Videoplayer VP = Videoplayer();
+
+	VP.Run();
+
+	while (true)
+	{
+
+	}
+
+	VP.End();
 
 	// Initialize the COM library.
 	HRESULT hr = CoInitialize(NULL);
