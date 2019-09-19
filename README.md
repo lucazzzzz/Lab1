@@ -18,7 +18,7 @@ Il faut maintenant ouvrir le projet sur Visual Studio, il suffit d'aller cherche
 
 
 
-Ensuite, il faut ajouter la librairie strmiids.lib dans les propriétés du projet sur Visual Studio, voici une image pour illustrer :
+Ensuite, il faut ajouter la librairie strmiids.lib dans les propriétés du projet sur Visual Studio, voici une image pour illustrer (ne pas oublier d'être en Release et en x64 comme sur l'image) :
 
 
 
@@ -29,7 +29,7 @@ Finalement, il faut générer le projet, voici un screenshot :
 
 
 
-## Troisième étapte : L'emplacement de la vidéo
+## Troisième étape : L'emplacement de la vidéo
 
 Avant de lancer l'exécution du programme, il est important de placer la vidéo "Example.avi" dans le disque dur C:\
 
