@@ -15,13 +15,13 @@ Avant de pouvoir utiliser le logiciel, il faut commencer par cloner le repositor
 Il faut maintenant ouvrir le projet sur Visual Studio, il suffit d'aller chercher le dossier "Labo1" qui a été précedemment cloné et cliquer sur Labo1.sln :
 
 
-![Screenshot #3](https://github.com/lucazzzzz/Lab1/blob/master/Images/Screenshot3.JPG)
+
 
 
 Ensuite, il faut ajouter la librairie strmiids.lib dans les propriétés du projet sur Visual Studio, voici une image pour illustrer :
 
 
-![Screenshot #4](https://github.com/lucazzzzz/Lab1/blob/master/Images/Screenshot4.JPG)
+
 
 
 
