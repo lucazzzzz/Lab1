@@ -23,6 +23,24 @@ Ensuite, il faut ajouter la librairie strmiids.lib dans les propriétés du proj
 
 
 
+Finalement, il faut générer le projet, voici un screenshot :
+
+
+
+
+
+## Troisième étapte : L'emplacement de la vidéo
+
+Avant de lancer l'exécution du programme, il est important de placer la vidéo "Example.avi" dans le disque dur C:\
+
+
+
+
+Il ne reste qu'à lancer le débogueur sur Visual Studio :
+
+
+
+
 
 
 
