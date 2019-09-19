@@ -26,3 +26,4 @@ Ensuite, il faut ajouter la librairie strmiids.lib dans les propriétés du proj
 
 
 
+
